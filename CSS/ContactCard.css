@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    list-style-type: none;
+}
+
+/************************************************************************************************************************/
+
+body{
+    height: 100vh; /*100% of viewport height*/
+    background: url(../IMG/Background.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************************************************************************************************************************/
+
+a{
+    text-decoration: none;
+    color: red;
+    size: 200%;
+}
+
+/************************************************************************************************************************/
+
+.Kartica{
+    width: 350px;
+    height: auto;
+    
+    grid-gap: 3px;   
+    grid-template-rows: repeat(1fr, 9fr);
+    grid-template-areas: 
+    "s"
+    "s"
+    "s"
+    "i"
+    "m"
+    "l"
+    "k"
+    "f"
+    "f";
+
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden; /*Da lepo pride border-radius :)*/
+    transition: transform 0.3s;
+}
+
+.Kartica:hover{
+    transform: translateY(5px)
+}
+
+/************************************************************************************************************************/
+
+.Slika, .Ime, .Opis, .Logos, .Kvovt{
+    
+    background: #566286;
+    padding: 10px 0;
+}
+
+/************************************************************************************************************************/
+
+.Slika{
+    margin: auto;
+    padding: 30px 0px 0px 0px;
+}
+
+.Slika img{
+    object-fit: cover;
+    border: white 1.5px solid;
+    border-radius: 16px;
+    width: 33%;
+    height: 33%;
+}
+
+/************************************************************************************************************************/
+
+.Ime{
+    font-size: 24px;
+    padding: 0px auto;
+    font-weight: 900;
+    color: white;
+}
+
+/************************************************************************************************************************/
+
+.Opis{
+    padding-top: 0;
+    color:black;
+}
+
+/************************************************************************************************************************/
+
+.Logos a{
+    padding: 0 20px;
+    font-size: 20pt;
+    color: white;
+}
+
+.Logos a:hover{
+    color:rgba(255, 0, 0, 0.589);
+}
+
+/************************************************************************************************************************/
+
+.Kvovt{
+    padding-bottom: 40px;
+}
+
+.Kvovt span::before,
+.Kvovt span::after{
+    content: '"';
+    color: black;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.Kvovt span{
+    font-style: italic;
+    border: white 2px solid;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+
+/************************************************************************************************************************/
+
+.Instagram{
+    padding: 40px 0;
+    background: white;
+    text-transform: uppercase;
+}
+
+.Instagram ul{
+    padding-right: 20px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap: 2px;
+}
+
+.Instagram ul .Number{
+    font-size: 16pt;
+}
+
+.Instagram ul .Text{
+    color:red;
+    font-size: 8pt;
+}
+
+.Instagram li:nth-child(1),
+.Instagram li:nth-child(2),
+.Instagram li:nth-child(3),
+.Instagram li:nth-child(4){
+    border-right: solid 1.5px #9c9a9a;
+}
