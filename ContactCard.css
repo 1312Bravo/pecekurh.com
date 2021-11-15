@@ -27,8 +27,9 @@ a{
 /************************************************************************************************************************/
 
 .Kartica{
-    width: 350px;
+    width: 480px;
     height: auto;
+    margin: auto;
     
     grid-gap: 3px;   
     grid-template-rows: repeat(1fr, 9fr);
@@ -156,4 +157,12 @@ a{
 .Instagram li:nth-child(3),
 .Instagram li:nth-child(4){
     border-right: solid 1.5px #9c9a9a;
+}
+
+/************************************************************************************************************************/
+
+@media (max-width: 480px){
+    body{
+        width: 700px
+    }
 }
