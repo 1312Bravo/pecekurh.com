@@ -28,7 +28,7 @@ a{
 
 .Kartica{
     width: 80%;
-    height: 700px;
+    height: 80%;
     
     grid-gap: 3px;   
     grid-template-rows: repeat(1fr, 11fr);
