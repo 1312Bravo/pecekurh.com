@@ -31,7 +31,7 @@ a{
     height: 80%;
     
     grid-gap: 3px;   
-    grid-template-rows: repeat(1fr, 9fr);
+    grid-template-rows: repeat(1fr, 11fr);
     grid-template-areas: 
     "s"
     "s"
@@ -40,6 +40,8 @@ a{
     "m"
     "l"
     "k"
+    "f"
+    "f"
     "f"
     "f";
 
