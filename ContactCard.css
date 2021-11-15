@@ -29,7 +29,6 @@ a{
 .Kartica{
     width: 80%;
     height: 80%;
-    margin: auto;
     
     grid-gap: 3px;   
     grid-template-rows: repeat(1fr, 9fr);
@@ -160,9 +159,3 @@ a{
 }
 
 /************************************************************************************************************************/
-
-@media (max-width: 480px){
-    body{
-        width: 700px
-    }
-}
