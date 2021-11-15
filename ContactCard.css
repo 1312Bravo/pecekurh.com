@@ -137,6 +137,7 @@ a{
     grid-area: f;
     padding: 40px 0;
     background: white;
+    border-radius: 12px;
     text-transform: uppercase;
 }
 
