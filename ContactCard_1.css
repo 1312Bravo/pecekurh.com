@@ -1,22 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:cursive;
+    font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
 }
 
-/************************************************************************************************************************/
-
 body{
-    height: 100vh; /*100% of viewport height*/
-    background: url(../IMG/Background.jpg) no-repeat center;
-    background-size: cover;
-    display: flex;
+    width: 90vw;
+    background: url(Background.jpg) no-repeat center;
     align-items: center;
     justify-content: center;
 }
-
-/************************************************************************************************************************/
 
 a{
     text-decoration: none;
@@ -27,10 +21,20 @@ a{
 /************************************************************************************************************************/
 
 .Kartica{
-    width: 350px;
-    height: auto;
-    
-    grid-gap: 3px;   
+    width: 80%;
+    height: 80%;
+
+    text-align: center;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+
+    grid-template-columns: 100%; 
+    display: grid;
+    grid-gap: none;
     grid-template-rows: repeat(1fr, 9fr);
     grid-template-areas: 
     "s"
@@ -43,30 +47,22 @@ a{
     "f"
     "f";
 
-    justify-content: center;
-    text-align: center;
-    border-radius: 12px;
     overflow: hidden; /*Da lepo pride border-radius :)*/
-    transition: transform 0.3s;
 }
-
-.Kartica:hover{
-    transform: translateY(5px)
-}
-
-/************************************************************************************************************************/
 
 .Slika, .Ime, .Opis, .Logos, .Kvovt{
-    
     background: #566286;
     padding: 10px 0;
+    
 }
 
 /************************************************************************************************************************/
 
 .Slika{
     margin: auto;
+    margin-bottom: 0px;
     padding: 30px 0px 0px 0px;
+    border-radius: 12px 12px 0 0;
 }
 
 .Slika img{
@@ -80,7 +76,7 @@ a{
 /************************************************************************************************************************/
 
 .Ime{
-    font-size: 24px;
+
     padding: 0px auto;
     font-weight: 900;
     color: white;
@@ -96,8 +92,8 @@ a{
 /************************************************************************************************************************/
 
 .Logos a{
+    font-size: 120%;
     padding: 0 20px;
-    font-size: 20pt;
     color: white;
 }
 
@@ -108,23 +104,23 @@ a{
 /************************************************************************************************************************/
 
 .Kvovt{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: white;
+    font-size: 85%;
 }
 
 .Kvovt span::before,
 .Kvovt span::after{
     content: '"';
-    padding: 5px;
+    padding: 3px;
     color: white;
-    font-size: 18px;
     font-style: italic;
 }
 
 .Kvovt span{
     font-style: italic;
     border: black 2px solid;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 8px;
 }
 
@@ -133,7 +129,9 @@ a{
 .Instagram{
     padding: 40px 0;
     background: white;
+    overflow: hidden; /*Da lepo pride border-radius :)*/
     text-transform: uppercase;
+    border-radius: 0 0 12px 12px;
 }
 
 .Instagram p{
