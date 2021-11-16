@@ -127,20 +127,16 @@ a{
 /************************************************************************************************************************/
 
 .Instagram{
-    padding: 40px 0;
-    padding-bottom: 60px;
+    padding-top: 25px;
+    padding-bottom: 30px;
     background: white;
     overflow: hidden; /*Da lepo pride border-radius :)*/
     text-transform: uppercase;
     border-radius: 0 0 12px 12px;
 }
 
-.Instagram p{
-    padding-bottom: 20px;
-    color: red;
-}
-
 .Instagram ul{
+    margin-top: 20px;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
